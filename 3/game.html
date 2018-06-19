@@ -6,76 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Game - Cow-Bull</title>
+	<script src="js/game.js"></script>
 </head>
 
 <body>
-	<script>
-		var max = 300,
-			res, min = 100,
-			count, cow = 0,
-			bull = 0,
-			exercise = 0,
-			rate = 3;
-		var num = Math.round(Math.random() * (max - min) + min);
-		console.log(num);
-		// while (exercise <= 2) {
-		var answer = prompt('Введите число от 100 до 300', num);
-		// exercise++;
-		//  res = getStatistik(num,answer);
-		// document.write(res);
-		// }
-		getCow(answer);
 
-		function getAnswer(answer) {
-			answer = [];
-			for (var i = 0; i < rate; i++) {
-				var str = answer.substr(i, 1);
-				var arrAnwer = answer.push(str);
-			}
-			return arrAnwer;
-		}
-
-		function getNum() {
-			num = [];
-			for (var i = 0; i < rate; i++) {
-				var str = num.substr(i, 1);
-				var arrNum = num.push(str);
-			}
-			return arrNum;
-		}
-
-		function getCow(arrAnwer, arrNum) {
-			arrAnswer.forEach(function (elem) {
-				arrNum.forEach(function (ele) {
-					var arr = [];
-					if (elem == ele) {
-						var arrCow = arr.push(arr);
-					}
-					return arrCow;
-				});
-			});
-		}
-		getAnswer(answer);
-		getNum(num);
-		console.log(arrAnswer);
-		// document.write(arrCow);
-		// function getStatistik(num,answer){
-		// 	if (answer < num) {
-		// 	res =	' Это мало  ' + answer;
-		// 	return res;
-		// 	} else if (answer > num) {
-		// 	res =	' Это много  ' + answer;
-		// 	return res;
-		// 	} else if (answer == num) {
-		// 	res =	'Ok ! Bingo !!!';
-		// 	return res;
-		// 	break;
-		// 	}
-		// }	
-		// getStatistik(num,answer);
-		// 	document.write('Результат ' + 'попытки № ' + exercise + ' - ' + res);
-		// document.write('Кол-во попыток - ' + exercise);
-	</script>
 </body>
 
 </html>
